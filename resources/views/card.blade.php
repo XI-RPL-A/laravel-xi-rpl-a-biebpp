@@ -31,6 +31,8 @@
                     background-color: aqua;
                     border-radius: 12px;
                     box-shadow: 0 0 25px 15px rgba(0, 0, 0, 0.2);
+
+                    animation: fadeIn 1s ease-in-out;
                 }
 
                 .pictures {
@@ -44,6 +46,17 @@
                     font-size: 20px;
                     font-weight: 450;
                 }
+
+                @keyframes fadeIn {
+                    from {
+                        opacity: 0;
+                        transform: translateY(10px);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
             </style>
         @endif
     </head>
@@ -53,7 +66,7 @@
                 <img class="pictures" src="{{ asset('images/img.png') }}" alt="foto">
                 <div class="bold">
                     <p>Nama: Bima</p>
-                    <p>NIM: 25975</p>
+                    <p>NIS: 25975</p>
                     <p>Kelas: XI RPLA</p>
                 </div>
             </div>

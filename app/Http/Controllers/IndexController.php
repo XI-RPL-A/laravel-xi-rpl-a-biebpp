@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class AboutController extends Controller
+class IndexController extends Controller
 {
     public function index() {
-        return view('card');
+        return 'Haii, Selamat Datang di Website dengan Laravel';
     }
 }
